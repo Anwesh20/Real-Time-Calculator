@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC | Premium Edition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="logo">CALCULATOR</span>
+            <button id="historybutton" title="View History">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </button>
+        </header>
+
+        <div class="calculator">
+            <div class="display-wrapper">
+                <input type="text" id="answer" readonly placeholder="0">
+            </div>
+            
+            <div class="button-grid">
+                <button class="btn-util">(</button>
+                <button class="btn-util">)</button>
+                <button class="btn-clear">AC</button>
+                <button class="btn-op">%</button>
+                
+                <button class="btn-num">7</button>
+                <button class="btn-num">8</button>
+                <button class="btn-num">9</button>
+                <button class="btn-op">X</button>
+                
+                <button class="btn-num">4</button>
+                <button class="btn-num">5</button>
+                <button class="btn-num">6</button>
+                <button class="btn-op">-</button>
+                
+                <button class="btn-num">1</button>
+                <button class="btn-num">2</button>
+                <button class="btn-num">3</button>
+                <button class="btn-op">+</button>
+                
+                <button class="btn-num">0</button>
+                <button class="btn-num">.</button>
+                <button class="btn-op">/</button>
+                <button class="btn-equal">=</button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <span>DESIGNED BY</span>
+            <span class="author">Anwesh Kumar Pattnaik</span>
+        </footer>
+    </div>
+
+    <div id="history"></div>
+    <div id="bar1" class="bars"></div>
+    <div id="bar2" class="bars"></div>
+    
+    <script src="hist.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>
